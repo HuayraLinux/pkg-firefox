@@ -1,0 +1,17 @@
+Source: firefox
+Section: admin
+Priority: required
+Maintainer: Fernando Toledo <ragnarok@docksud.com.ar>
+Standards-Version: 3.9.5
+Build-Depends: python, unzip, zip, libgtk2.0-dev, libdbus-1-dev, libdbus-glib-1-dev,
+ yasm, libasound2-dev, libpulse-dev, libgstreamer1.0-dev, libgstreamer0.10-dev,
+ libgstreamer-plugins-base0.10-dev, libxt-dev
+
+Package: firefox
+Architecture: i386 am64
+Priority: required
+Description: Mozilla Firefox
+ Mozilla Firefox es un navegador web libre y de código abierto desarrollado
+ y coordinado por la Fundación Mozilla.
+ Usa el motor Gecko para renderizar páginas webs, el cual implementa actuales
+ y futuros estándares web.
