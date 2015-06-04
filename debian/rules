@@ -19,11 +19,9 @@ export DH_OPTIONS
 
 export HUAYRA_BUILD_PATH=$(CURDIR)/huayra
 
-override_dh_auto_build:
-	mkdir -p $$HUAYRA_BUILD_PATH
-
 override_dh_auto_configure:
-	cd $$HUAYRA_BUILD_PATH; dh_auto_configure -- --prefix=/usr 
+	mkdir -p $$HUAYRA_BUILD_PATH
+	cd $$HUAYRA_BUILD_PATH; ../configure --prefix=/usr 
 
 %:
 	dh $@
