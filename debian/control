@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9), python, unzip, zip, libgtk2.0-dev, libdbus-1-de
  libgstreamer-plugins-base0.10-dev, libxt-dev
 
 Package: firefox
-Architecture: i386 am64
+Architecture: i386 amd64
 Priority: required
 Description: Mozilla Firefox
  Mozilla Firefox es un navegador web libre y de código abierto desarrollado
