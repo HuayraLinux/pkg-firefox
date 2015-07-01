@@ -1,0 +1,2 @@
+debian/firefox.desktop usr/share/applications/
+debian/firefox.svg  usr/share/icons/hicolor/scalable/apps/
