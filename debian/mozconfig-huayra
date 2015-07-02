@@ -1,0 +1,17 @@
+ac_add_options --enable-release
+ac_add_options --disable-updater
+ac_add_options --enable-application=browser
+ac_add_options --disable-tests
+ac_add_options --disable-crashreporter
+ac_add_options --disable-debug
+ac_add_options --with-system-zlib
+ac_add_options --with-system-jpeg
+ac_add_options --disable-installer
+ac_add_options --enable-official-branding
+ac_add_options --with-default-mozilla-five-home=/usr/lib/firefox
+ac_add_options --enable-strip
+ac_add_options --enable-default-toolkit=cairo-gtk2
+ac_add_options --enable-pango
+ac_add_options --enable-svg
+ac_add_options --enable-mathml
+ac_add_options --enable-ui-locale=es-AR

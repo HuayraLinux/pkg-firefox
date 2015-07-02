@@ -19,15 +19,20 @@ export DH_OPTIONS
 
 export HUAYRA_BUILD_PATH=$(CURDIR)/huayra
 
+export MOZCONFIG=$(CURDIR)/debian/mozconfig-huayra
+
 override_dh_auto_build:
 	mkdir -p $$HUAYRA_BUILD_PATH
 	dh_auto_build --builddirectory huayra 
-    
+
 override_dh_auto_configure:
-	dh_auto_configure --builddirectory huayra -- --prefix=/usr 
+	dh_auto_configure --builddirectory huayra -- --prefix=/usr
 
 override_dh_auto_install:
 	dh_auto_install --builddirectory huayra
 
+override_dh_auto_clean:
+	dh_auto_clean --builddirectory huayra
+
 %:
-	dh $@
+	dh $@ --parallel
