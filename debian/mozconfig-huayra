@@ -15,3 +15,4 @@ ac_add_options --enable-pango
 ac_add_options --enable-svg
 ac_add_options --enable-mathml
 ac_add_options --enable-ui-locale=es-AR
+ac_add_options --with-l10n-base=../l10n
